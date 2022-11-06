@@ -3,7 +3,7 @@ from rest_framework import serializers
 from .models import Curso, Avaliacao
 
 
-class AvaliacaoSerializer(serializers.Serializer):
+class AvaliacaoSerializer(serializers.ModelSerializer):
 
     class Meta:
         extra_kwargs = {
